@@ -2,5 +2,5 @@ from django.shortcuts import render
 
 app_name = "books" 
 # Create your views here.
-def index(request):
-    return render(request, "books/index.html")
+def books(request):
+    return render(request, "books/books.html")
