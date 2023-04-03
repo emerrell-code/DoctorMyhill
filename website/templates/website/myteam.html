@@ -1,15 +1,21 @@
 {% extends "website/layout.html" %}
 
+{% load static %}
+
+{% block title %}
+    My Team
+{% endblock %}
+
 {% block body %}
 
      <!--  Personnel Cards  -->
-     <div class="container">
+     <div class="my_team_container">
 
         <h1 id="team_title">The Core Team</h1>
 
-        <div class="card">
+        <div class="my_team_card">
             <figure class="card__thumb">
-                <img src="../images/myhill_profile.jpg" alt="Picture by Kyle Cottrell" class="card__image">
+                <img src="{% static 'website/images/myhill_profile.jpg' %}" alt="Picture of Dr Myhill" class="card__image">
                 <figcaption class="card__caption">
                     <h2 class="card__title">Dr Sarah Myhill</h2>
                     <p class="card__snippet">The Boss</p>
@@ -18,9 +24,9 @@
             </figure>
         </div>
     
-        <div class="card">
+        <div class="my_team_card">
             <figure class="card__thumb">
-                <img src="../images/Nancy.jpg" alt="Picture by Nathan Dumlao" class="card__image">
+                <img src="{% static 'website/images/Nancy.jpg' %}" alt="Picture of Nancy(Dog)" class="card__image">
                 <figcaption class="card__caption">
                     <h2 class="card__title">Nancy</h2>
                     <p class="card__snippet">My Patterdale Terrier - the real Boss!</p>
@@ -33,10 +39,10 @@
 
     <h1 id="team_title">The Office Team</h1>
 
-    <div class="container">
-        <div class="card">
+    <div class="my_team_container">
+        <div class="my_team_card">
             <figure class="card__thumb">
-                <img src="../images/Anna.jpg" alt="Picture by Kyle Cottrell" class="card__image">
+                <img src=" {% static 'website/images/Anna.jpg' %} " alt="Picture of Anna" class="card__image">
                 <figcaption class="card__caption">
                     <h2 class="card__title">Anna</h2>
                     <p class="card__snippet">
@@ -44,14 +50,14 @@
                        <li>Zoom and Weekend Workshops</li>
                     </ol>
                     </p>
-                    <a href="" class="card__button">anna@doctormyhill.co.uk</a>
+                    <a href="mailto: anna@doctormyhill.co.uk" class="card__button"> anna@doctormyhill.co.uk</a>
                 </figcaption>
             </figure>
         </div>
     
-        <div class="card">
+        <div class="my_team_card">
             <figure class="card__thumb">
-                <img src="../images/Caroline.jpg" alt="Picture by Nathan Dumlao" class="card__image">
+                <img src=" {% static 'website/images/Caroline.jpg' %} " alt="Picture of Caroline" class="card__image">
                 <figcaption class="card__caption">
                     <h2 class="card__title">Caroline</h2>
                     <p class="card__snippet">
@@ -60,14 +66,14 @@
                             <li>Letters of support for PIP, ESA etc. </li>
                          </ol>
                     </p>
-                    <a href="" class="card__button">caroline@doctormyhill.co.uk</a>
+                    <a href="mailto: caroline@doctormyhill.co.uk" class="card__button"> caroline@doctormyhill.co.uk</a>
                 </figcaption>
             </figure>
         </div>
     
-        <div class="card">
+        <div class="my_team_card">
             <figure class="card__thumb">
-                <img src="../images/Helen.jpg" alt="Picture by Daniel Lincoln" class="card__image">
+                <img src="{% static 'website/images/Helen.jpg' %}" alt="Picture of Helen" class="card__image">
                 <figcaption class="card__caption">
                     <h2 class="card__title">Helen</h2>
                     <p class="card__snippet">
@@ -76,20 +82,20 @@
                             <li>Typing and letter queries</li>
                          </ol>
                     </p>
-                    <a href="" class="card__button"> helen@doctormyhill.co.uk</a>
+                    <a href="mailto: helen@doctormyhill.co.uk" class="card__button"> helen@doctormyhill.co.uk</a>
                 </figcaption>
             </figure>
         </div>
 
-        <div class="card">
+        <div class="my_team_card">
             <figure class="card__thumb">
-                <img src="../images/Rosie.jpg" alt="Picture by Daniel Lincoln" class="card__image">
+                <img src="{% static 'website/images/Rosie.jpg' %}" alt="Picture of Rosie" class="card__image">
                 <figcaption class="card__caption">
                     <h2 class="card__title">Rosie</h2>
                     <p class="card__snippet">
                         <ol><li>Test Kit Queries</li> 
                      </ol></p>
-                    <a href="" class="card__button">rosie@doctormyhill.co.uk</a>
+                    <a href="mailto: rosie@doctormyhill.co.uk" class="card__button">rosie@doctormyhill.co.uk</a>
                 </figcaption>
             </figure>
         </div>
@@ -97,10 +103,10 @@
 
     <h1 id="team_title">My Social Media Group Admins</h1>
 
-    <div class="container">
-        <div class="card">
+    <div class="my_team_container">
+        <div class="my_team_card">
             <figure class="card__thumb">
-                <img src="../images/Katie_smaller.jpg" alt="Picture by Kyle Cottrell" class="card__image">
+                <img src="{% static 'website/images/Katie_smaller.jpg' %}" alt="Picture of Katie" class="card__image">
                 <figcaption class="card__caption">
                     <h2 class="card__title">Katie</h2>
                     <p class="card__snippet">Katie is enjoying the sunshine and fresh sea breezes in her beloved North East, just outside the magnificent Seaham Hall, where she was married.</p>
@@ -109,9 +115,9 @@
             </figure>
         </div>
     
-        <div class="card">
+        <div class="my_team_card">
             <figure class="card__thumb">
-                <img src="../images/craig.jpg" alt="Picture by Nathan Dumlao" class="card__image">
+                <img src="{% static 'website/images/craig.jpg' %}" alt="Picture of Craig" class="card__image">
                 <figcaption class="card__caption">
                     <h2 class="card__title">Craig</h2>
                     <p class="card__snippet">Craig is at one of his favourite places, Sheringham, waiting for a pot of Green Tea and a Full English breakfast to be served, hence the smile!</p>

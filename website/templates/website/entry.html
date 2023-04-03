@@ -1,0 +1,16 @@
+{% extends "website/layout.html"%}
+
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="main_content">
+        {{ page | safe}}
+    </div>
+
+{% endblock %}

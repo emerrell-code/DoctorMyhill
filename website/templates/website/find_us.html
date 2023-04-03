@@ -1,12 +1,39 @@
 {% extends "website/layout.html" %}
 
+{% load static %}
+
+{% block title %}
+    Find Us
+{% endblock %}
+
 {% block body %}
 
-    <div class="container">
+    <div class="find_us_container">
         <h1>How to find us</h1>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16575.672534399622!2d-3.147714126883451!3d52.3250256864353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48701f8224b5040d%3A0x1c550e5bf2d271ec!2sLlangunllo%2C%20Knighton%20LD7%201SL!5e0!3m2!1sen!2suk!4v1679397965706!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16575.672534399622!2d-3.147714126883451!3d52.3250256864353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48701f8224b5040d%3A0x1c550e5bf2d271ec!2sLlangunllo%2C%20Knighton%20LD7%201SL!5e0!3m2!1sen!2suk!4v1679397965706!5m2!1sen!2suk" width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+    </div>
+
+    <div class="container">
+        <h2>How to get here</h2>
+        <b>UPPER WESTON, LLANGUNLLO, KNIGHTON, LD7 1SL</b>
+        <br><br>
+    <ul>
+        <li><p><b>Travelling from Knighton</b> - Travelling from Knighton. Approximately 4.5 mile after leaving Knighton on the A488, take a turning on your right, the B4356. This follows the valley up to Llangunllo village. After 1.7 miles you will see a gap in the hedge with cattle grid on your left marked by a brown notice with "Dr M's" on it! Turn left onto this farm track - it is bumpy and so do go slowly. Drive up to the twin-gabled house that you can see some 500m across the valley. Follow the drive over the stream and up the hill. Park in yard just over the cattle grid.
+            If you are staying at the Barn - well this is behind the main house - drive through and up the yard and park on the pebble surface outside the conservato</p></li>
+        <li><p><b>Travelling from Penybont </b> - The B4356 turning, sign-posted to Llangunllo and Llanbister, is on the left some 9.2 miles along the A448 towards Knighton. Directions from the B4356 as above.</p></li>
+        <li><p><b>Travelling from Presteigne</b> - Leave Presteigne on the B4356 travelling west through Whitton to the junction with the A488 at Monaughty. Turn right on to the A488 (direction Knighton) and after about 300 yards turn left back on to the B4356, sign-posted to Llangunllo and Llanbister. After about 1.7 miles the entrance to Upper Weston is on your left.</p></li>
+    </ul>
+
+    <p>For the "belt and braces" approach, why not have a road atlas in the car as well?!</p>
+
+<!-- <br><br> -->
+
+<p>Here are some pictures to help you on your way.....</p>
+<img aria-label="Upper Weston as seen from the access road" src="{% static 'website/images/find_us1.jpeg' %}" alt="Upper Weston as seen from the access road">
+<img aria-label='The brown "Dr M's" sign' src="{% static 'website/images/find_us2.jpeg' %}" alt="The brown "Dr M's" sign">
+<img aria-label="The view leading to Upper Weston up the track" src="{% static 'website/images/find_us3.jpeg' %}" alt="The view leading to Upper Weston up the track">
     </div>
 
 {% endblock %}

@@ -1,5 +1,7 @@
 {% extends "website/layout.html"%}
 
+{% load static %}
+
 {% block title %}
     Books
 {% endblock %}
@@ -7,215 +9,165 @@
 {% block body %}
 
     <!-- Hero Section -->
-	<div class="hero" id="home">
-		<div class="hero_container">
-			<h1 class="hero_heading">Dr Sarah Myhill MB BS</h1>
-			<h2>Naturopathic Physician</h2>
-			<h3>Registered with <a href="https://theanp.co.uk">Association of Naturopathic Practitioners</a></h3>
-			<h3>Registered with <a href="https://gncouncil.co.uk">General Naturopathic Council</a></h3>
-			<h3>Deregistered with General Medical Council</h3>
-			<p class="hero_description"></p>
-			<h2 class="hero_description">##Empowering you to recover your health</h2>
-			<button class="main_btn"><a href="#">Learn More Here</a></button>
-		</div>
-	</div>
-
-
-		<!-- About me Content -->
-    <div class="container" id="about_content">
-        <div class="row">
-            <div class="col-8">
-                <h1>Hello!</h1>
-                <h1><span>I'm</span> Dr Myhill</h1>
-                <p>The aim of this website is to give individuals access to all the information and some tests they need to take control of their own health. Everyone should follow <a href="#">The general approach to maintaining and restoring good health</a>, which involves eating a paleo ketogenic diet, taking a basic package of nutritional supplements, ensuring a good night's sleep on a regular basis and getting the right balance between work, exercise and rest. Because we live in an increasingly polluted world, we should probably all be doing some sort of detox regime. Start with <a href="#">The general approach to maintaining and restoring good health</a>! </p>
-            </div>
-            <div class="col">
-                <div class="column" id="column_2">
-                    <img src="images/myhill.png" alt="">
-                </div>
+        <div class="hero" id="home">
+            <div class="hero_container">
+                <h1 class="hero_heading">Dr Sarah Myhill MB BS</h1>
+                <h2>Naturopathic Physician</h2>
+                <h3>Registered with <a href="https://theanp.co.uk">Association of Naturopathic Practitioners</a></h3>
+                <h3>Registered with <a href="https://gncouncil.co.uk">General Naturopathic Council</a></h3>
+                <h3>Deregistered with General Medical Council</h3>
+                <p class="hero_description"></p>
+                <h2 class="hero_description">Empowering you to recover your health</h2>
+                <button class="main_btn"><a href="#">Learn More Here</a></button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-5">
-                this is where the card will go!!!!!
-            </div>
-                <div class="col">
-                    <p>Please, also note that what is contained within this website are my opinions, which I believe have a scientific and logical basis. Some of the advice may be over and above National Guidelines. To access NICE Guidelines please go to <a href="https://www.nice.org.uk" target="_blank">NICE</a> </p> 
-                </div>
-                <div class="row">
-                    <div class="col">
-                <p> Symptoms and tests help identify the underlying mechanisms that cause disease. Common mechanisms include allergies, sugar and carbohydrate addiction, poor mitochondrial function, poor antioxidant status, poor thyroid and adrenal function, toxic stress, poor detoxification and methylation and so on. All these can be tested for, identified and corrected using nutritional supplements and possibly hormones. Once the general approach to restoring health has been applied, these tests will help to identify the bolt-on extras for other disease processes.
-                    <br>
-                    To get the best out of this website, please also read:
-                    <br>
-                        <ul>
-                            <li>How this website works</li>
-                            <li>When not to use this website</li>
-                            <li>How to order tests</li>
-                        </ul>
-                    
-                    Please feel free to discuss any of this with your physician who is welcome to get in touch with me directly to discuss any of the advice in this website.
-                    <br>
-                    If there is a subject you would like me to address, please, tell me and I will put in an appropriate web page.
-                    <br>
-                    If you find anything in my website with which you disagree or you feel is out-dated or illogical or whatever, please do contact me directly. I am happy to amend entries given good reason.</p> 
-                </div>
-                </div
+
+
+<!-- About me Content -->
+<div class="container" id="about_content">
+    <div class="text-col">
+        <h1>Hello!</h1>
+        <h1><span id="im_span">I'm</span> Dr Myhill</h1> 
+        <p>The aim of this website is to give individuals access to all the information and some tests they need to take control of their own health. Everyone should follow <a href="#">The general approach to maintaining and restoring good health</a>, which involves eating a paleo ketogenic diet, taking a basic package of nutritional supplements, ensuring a good night's sleep on a regular basis and getting the right balance between work, exercise and rest. Because we live in an increasingly polluted world, we should probably all be doing some sort of detox regime. Start with <a href="#">The general approach to maintaining and restoring good health</a>! </p>
+        <div id="colour_box"></div>
+        <div id="colour_bar" ></div>
+        <div class="image-col" id="image_box">
+            <img src="{% static 'website/images/myhill.png' %}" alt="Dr Myhill">
         </div>
     </div>
-            <!-- <div class="container">
-                <h1><span id="about">CFS/ME sufferers</span> looking for advice on their condition may find it helpful to begin by reading these aricles;</h1>
-                <ul>
-                    <li><a href="#">Overview of CFS/ME protocol</a> </li>
-                    <li>CFS/ME Protocol - order of introduction of interventions</li>
-                    <li>Summary of my approah for CFS/ME sufferes</li>
-                    <li>CFS Checklist - start off and check your treatment regime here</li>
-                </ul>
-            </div>
-            <div class="column" col-lg-12>
-                <p>Please, also note that what is contained within this website are my opinions, which I believe have a scientific and logical basis. Some of the advice may be over and above National Guidelines. To access NICE Guidelines please go to <a href="https://www.nice.org.uk" target="_blank">NICE</a>
-                    <br><br>
-                    Symptoms and tests help identify the underlying mechanisms that cause disease. Common mechanisms include allergies, sugar and carbohydrate addiction, poor mitochondrial function, poor antioxidant status, poor thyroid and adrenal function, toxic stress, poor detoxification and methylation and so on. All these can be tested for, identified and corrected using nutritional supplements and possibly hormones. Once the general approach to restoring health has been applied, these tests will help to identify the bolt-on extras for other disease processes.
-                    <br><br>
-                    To get the best out of this website, please also read:
-                    <br><br>
-                        <ul>
-                            <li>How this website works</li>
-                            <li>When not to use this website</li>
-                            <li>How to order tests</li>
-                        </ul>
-                    <br><br>
-                    Please feel free to discuss any of this with your physician who is welcome to get in touch with me directly to discuss any of the advice in this website.
-                    <br><br>
-                    If there is a subject you would like me to address, please, tell me and I will put in an appropriate web page.
-                    <br><br>
-                    If you find anything in my website with which you disagree or you feel is out-dated or illogical or whatever, please do contact me directly. I am happy to amend entries given good reason.</p>
-            </div> -->
-<!-- 
-			<p>Please, also note that what is contained within this website are my opinions, which I believe have a scientific and logical basis. Some of the advice may be over and above National Guidelines. To access NICE Guidelines please go to <a href="#">NICE</a>.</p>
 
-			<p>Symptoms and tests help identify the underlying mechanisms that cause disease. Common mechanisms include allergies, sugar and carbohydrate addiction, poor mitochondrial function, poor antioxidant status, poor thyroid and adrenal function, toxic stress, poor detoxification and methylation and so on. All these can be tested for, identified and corrected using nutritional supplements and possibly hormones. Once the general approach to restoring health has been applied, these tests will help to identify the bolt-on extras for other disease processes.</p>
-			<p>To get the best out of this website, please also read: </p>
-				<ul>
-					<li><a href="#">How this Website Works</a></li>
-					<li><a href="#">When Not to Use this Website</a></li>
-					<li><a href="#">How to Order Tests</a></li>
-				</ul>
-			<p>Please feel free to discuss any of this with your physician who is welcome to get in touch with me directly to discuss any of the advice in this website. </p>
-		
-			<p>If there is a subject you would like me to address, please, tell me and I will put in an appropriate web page.</p>
+    <div class="about_container">
+        <div class="about_card">
+            <p><b style="font-size: 30px; ">CFS/ME Sufferers</b> looking for advice on their condition may find it helpful to begin by reading these articles:</p>
+            <ul>
+                <li><a href="#">Overview of CFS/ME protocol</a></li>
+                <li><a href="">CFS/ME Protocol - order of introduction of interventions</a></li>
+                <li><a href="">Summary of my approach for CFS/ME sufferers</a></li>
+                <li><a href="">CFS Checklist - start off and check your treatment regime here</a></li>
+            </ul>
+        </div>
+                <p>Please, also note that what is contained within this website are my opinions, which I believe have a scientific and logical basis. Some of the advice may be over and above National Guidelines. To access NICE Guidelines please go to <a href="https://www.nice.org.uk" target="_blank">NICE</a>.</p>
+                <p>Symptoms and tests help identify the underlying mechanisms that cause disease. Common mechanisms include allergies, sugar and carbohydrate addiction, poor mitochondrial function, poor antioxidant status, poor thyroid and adrenal function, toxic stress, poor detoxification and methylation and so on. All these can be tested for, identified and corrected using nutritional supplements and possibly hormones. Once the general approach to restoring health has been applied, these tests will help to identify the bolt-on extras for other disease processes. </p>
+                <div class="about_card_1">
+                    <h6>To get the best out of this website, please also read</h3>:
+                    <ul>
+                        <li><a href="#">How this website works</a></li>
+                        <li><a href="#">When not to use this website</a></li>
+                        <li><a href="#">How to order tests</a></li>
+                    </ul>
+                </div>
 
-			<p>If you find anything in my website with which you disagree or you feel is out-dated or illogical or whatever, please do contact me directly. I am happy to amend entries given good reason.</p>
-
-			<div class="image-box">
-				<img src="images/myhill.png" alt="">
-			</div> -->
-			
-		</div>
-	
+                Please feel free to discuss any of this with your physician who is welcome to get in touch with me directly to discuss any of the advice in this website.
+                <br><br>
+                If there is a subject you would like me to address, please, tell me and I will put in an appropriate web page.
+                <br><br>
+                If you find anything in my website with which you disagree or you feel is out-dated or illogical or whatever, please do contact me directly. I am happy to amend entries given good reason.</p> 
+    </div> 
+</div>
+</div>
 		<!-- End Carousel Content -->
 
 
-		<!-- Quicklinks -->
+		<!-- Services Section -->
         {% for card in cards %}
         {% endfor %}
-		<div class="services" id="services">
+        <div class="services" id="services">
             <h1>My Services</h1>
                 <div class="services_wrapper">
                     <div class="services_card">
-                        <h2>Allergies</h2>
+                        <h2><a href="#">Allergies</a></h2>
                         <!-- <p>Autoimmunity and Infections </p> -->
                         <!-- <div class="services_btn"><button>Go Here</button></div> -->
                     </div>
-					<div class="services_card">
+                    <div class="services_card">
                         <h2><a href="{% url 'books' %}">Books</a></h2>
-
+        
                         <!-- <p>For all problems Bowel related</p> -->
                     </div>
                     <div class="services_card">
-                        <h2>Bowel Problems</h2>
+                        <h2><a href="#">Bowel Problems</a></h2>
                         <!-- <p>For all problems Bowel related</p> -->
                     </div>
                     <div class="services_card">
-                        <h2>Breathing Problems </h2>
+                        <h2><a href="#">Breathing Problems</a></h2>
                         <!-- <p>For all problems Breathing related</p> -->
                     </div>
                     <div class="services_card">
-                        <h2>Cancer</h2>
+                        <h2><a href="#">Cancer</a></h2>
                         <!-- <p>The Big C</p> -->
                     </div>
                     <div class="services_card">
-                        <h2>Children's Problems</h2>
+                        <h2><a href="#">Children's Problems</a></h2>
                         <!-- <p>Damn Kids</p> -->
                     </div>
                     <div class="services_card">
-                        <h2>Fatigue</h2>
+                        <h2><a href="#">Fatigue</a></h2>
                         <!-- <p>Go to sleep</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Heart Disease and Circulation</h2>
+                        <h2><a href="#">Heart Disease and Circulation</a></h2>
                         <!-- <p>Ticking time bomb</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Hormonal Problems</h2>
+                        <h2><a href="#">Hormonal Problems</a></h2>
                         <!-- <p>Women</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Joints, Muscles and Bones</h2>
+                        <h2><a href="#">Joints, Muscles and Bones</a></h2>
                         <!-- <p>Damn Kids</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Neurological Porblems</h2>
+                        <h2><a href="#">Neurological Porblems</a></h2>
                         <!-- <p>My mother</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Privacy Seal</h2>
+                        <h2><a href="#">Privacy Seal</a></h2>
                         <!-- <p>Click here now</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Nutrition, Vitamins, Minerals and Diets</h2>
+                        <h2><a href="#">Nutrition, Vitamins, Minerals and Diets</a></h2>
                         <!-- <p>Yum</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Skin Problems</h2>
+                        <h2><a href="#">Skin Problems</a></h2>
                         <!-- <p>Tell me about it</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Sleep Problems</h2>
+                        <h2><a href="#">Sleep Problems</a></h2>
                         <!-- <p>Again my mother</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Symptoms</h2>
+                        <h2><a href="#">Symptoms</a></h2>
                         <!-- <p>Never ending</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Toxic Problems: Pollution and Poisoning</h2>
+                        <h2><a href="#">Tests</a></h2>
+                        <!-- <p>Something for the nerds</p> -->
+                        
+                    </div>
+                    <div class="services_card">
+                        <h2><a href="#">Toxic Problems: Pollution and Poisoning</a></h2>
                         <!-- <p>Women</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Urinary Tract</h2>
+                        <h2><a href="#">Urinary Tract</a></h2>
                         <!-- <p>Feel the burn</p> -->
                         
                     </div>
                     <div class="services_card">
-                        <h2>Women's Health, Fertility and Health Babies</h2>
+                        <h2><a href="#">Women's Health, Fertility and Health Babies</a></h2>
                         <!-- <p>Don't click on this</p> -->
-                        
-                    </div>
-                    <div class="services_card">
-                        <h2>Tests</h2>
-                        <!-- <p>Something for the nerds</p> -->
                         
                     </div>
                 </div>
